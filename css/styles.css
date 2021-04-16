@@ -174,5 +174,5 @@ button::before{
 }
 
 .link{
-    display: block;
+    display: inline-block;
 }
