@@ -73,21 +73,25 @@ body{
     color: #111517;
 }
 
+main{
+    padding-top: 48px;
+}
+
 b{
     font-weight: 600;
 }
 
-h3, p{
-    margin-left: 24px;
-}
-
 h3{
-    margin-top: 24px;
+    margin: 0;  
     margin-bottom: 16px;
 }
 
 p{
     font-weight: 300;
+    margin: 0;
+}
+
+p:not(:last-child){
     margin-bottom: 8px;
 }
 
@@ -100,7 +104,6 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 48px;
 }
 
 .container{
@@ -133,11 +136,24 @@ button::before{
     width: 20px;
 }
 
+.section-form{
+    margin-bottom: 48px;
+}
+
 .form{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
 }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 .form-search{
     border: 0;
@@ -162,7 +178,7 @@ button::before{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 75px;
-    margin-bottom: 45px;
+    padding-bottom: 45px;
 }
 
 .flag{
@@ -174,5 +190,9 @@ button::before{
 }
 
 .link{
-    display: inline-block;
+    display: block;
+}
+
+.info-country{
+    padding: 24px 0 0 24px;
 }
